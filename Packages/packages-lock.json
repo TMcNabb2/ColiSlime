@@ -6,12 +6,6 @@
       "source": "embedded",
       "dependencies": {}
     },
-    "com.mathijsbakker.extenject": {
-      "version": "file:D:/General-game-assets/Unity Packages/Plugins/Zenject",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.unity.ai.navigation": {
       "version": "2.0.5",
       "depth": 0,
@@ -108,7 +102,7 @@
     },
     "com.unity.nuget.newtonsoft-json": {
       "version": "3.2.1",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -223,14 +217,6 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
-    },
-    "com.v0lt.editor-attributes": {
-      "version": "file:D:/General-game-assets/Unity Packages/EditorAttributes",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.2.1"
-      }
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
