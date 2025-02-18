@@ -7,14 +7,15 @@ using UnityEditor;
 namespace AutoClass
 {
     public class ClassBuilder : BuilderContext<ClassBuilder>,
-        IClassDeclarable
+        IClassDeclarable,
+        IEnumDeclarable
     {
         private readonly string _fileName;
         private string[] _usings;
         private string _namespace;
 
         /// <summary>
-        /// Creates a new class builder. Create a class by calling the "Class" method on this object.
+        /// Creates a new class builder. Create a class by calling the "AddClass" method on this object.
         /// </summary>
         /// <param name="namespace">The namespace of the class file.</param>
         /// <param name="fileName">The name of the class file.</param>

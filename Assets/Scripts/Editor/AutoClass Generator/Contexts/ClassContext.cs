@@ -18,7 +18,12 @@ namespace AutoClass.Contexts
         }
     }
 
-    public interface IClassBody : IClassDeclarable, IMethodDeclarable, IFieldDeclarable, IPropertyDeclarable { }
+    public interface IClassBody :
+        IClassDeclarable,
+        IEnumDeclarable,
+        IMethodDeclarable,
+        IFieldDeclarable,
+        IPropertyDeclarable { }
 
     /// <summary>
     /// A context can inherit from this to allow declaring classes.
