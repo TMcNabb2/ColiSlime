@@ -183,7 +183,6 @@
         "com.unity.searcher": "4.9.2"
       }
     },
-
     "com.unity.splines": {
       "version": "2.7.2",
       "depth": 1,
@@ -191,7 +190,8 @@
       "dependencies": {
         "com.unity.mathematics": "1.2.1",
         "com.unity.settings-manager": "1.0.3"
-      }
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.sysroot": {
       "version": "2.0.10",
@@ -206,7 +206,6 @@
       "source": "registry",
       "dependencies": {
         "com.unity.sysroot": "2.0.10"
-
       },
       "url": "https://packages.unity.com"
     },
