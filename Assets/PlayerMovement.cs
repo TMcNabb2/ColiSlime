@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement Instance { get; private set; }
     [Header("Movement Settings")]
     public float movementSpeed;
     public float dashForce;
@@ -33,6 +34,14 @@ public class PlayerMovement : MonoBehaviour
         if (_rigidBody == null)
         {
             _rigidBody = GetComponent<Rigidbody>();
+        }
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
         }
     }
 

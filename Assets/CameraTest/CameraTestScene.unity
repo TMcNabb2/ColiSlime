@@ -235,6 +235,7 @@ MonoBehaviour:
   dashCooldown: 0
   MoveAction: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   DashAction: {fileID: -1094845753084551633, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  PauseAction: {fileID: -1057179250132368241, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   _dashCooldownTimer: 3
 --- !u!54 &383733247
 Rigidbody:

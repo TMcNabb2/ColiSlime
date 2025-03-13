@@ -1,0 +1,130 @@
+.settings__screen {
+}
+
+.settings__background {
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    background-color: rgba(82, 183, 92, 0.8);
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+.settings__container {
+}
+
+.settings__header {
+    height: 13%;
+}
+
+.settings-title-label {
+    font-size: 60px;
+    -unity-text-align: upper-center;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+    color: rgb(144, 47, 55);
+}
+
+.settings-header__banner {
+    position: absolute;
+    left: 25%;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-image: url("project://database/Assets/UI%20Toolkit/BannerbgAi%201.png?fileID=-824001176&guid=19ddbbd589ca66e44b9cc7ba0d1987ba&type=3#BannerbgAi 1_0");
+}
+
+.settings__separator {
+    flex-basis: 20px;
+    height: 95%;
+    background-image: url("project://database/Assets/UI%20Toolkit/pixilart-drawing.png?fileID=-414599635&guid=61d6ed504a631974887bf1c32b3c5080&type=3#pixilart-drawing_0");
+    overflow: hidden;
+}
+
+.settings__panel-body {
+    flex-grow: 1;
+    width: 50%;
+    height: 100%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.settings__account {
+    flex-basis: 40%;
+    align-items: center;
+    width: 100%;
+    margin-top: 11px;
+}
+
+.settings__panel-label {
+    font-size: 40px;
+    color: rgb(41, 91, 55);
+    -unity-text-align: middle-center;
+}
+
+.settings__account-button {
+    width: 80%;
+    height: 80px;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 40px;
+    -unity-text-align: upper-center;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.25s;
+    background-image: url("project://database/Assets/UI%20Toolkit/ButtonAiBack.png?fileID=1291714558&guid=6fde9e0f8132f5d4b8f400252fd5059b&type=3#ButtonAiBack_0");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.settings__social-button-1 {
+    width: 90%;
+    height: 85px;
+}
+
+.settings__player-settings {
+    width: 100%;
+    flex-basis: 50%;
+}
+
+.settings__player-label {
+    flex-basis: 15%;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    font-size: 40px;
+    color: rgb(41, 91, 55);
+    -unity-text-align: upper-center;
+}
+
+.unity-label {
+}
+
+.unity-text-element {
+}
+
+.settings__player-text-field {
+    top: -2%;
+    left: 5%;
+    flex-basis: 20%;
+    width: 85%;
+    margin-top: 9px;
+    margin-right: 11px;
+    margin-left: 12px;
+    padding-right: 19px;
+    padding-left: 4px;
+    font-size: 30px;
+    color: rgb(102, 135, 76);
+}
+
+.settings__slider-container {
+    flex-direction: row;
+    flex-basis: 17%;
+    width: 100%;
+}
