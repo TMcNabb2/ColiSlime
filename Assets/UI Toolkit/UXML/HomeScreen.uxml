@@ -1,8 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI%20Toolkit/USS/Common.uss?fileID=7433441132597879392&amp;guid=791f3e31718a1bf459b968f184513096&amp;type=3#Common" />
-    <Style src="project://database/Assets/UI%20Toolkit/USS/HomeScreen.uss?fileID=7433441132597879392&amp;guid=9f9231a1da5c732409ace9c0da529cd2&amp;type=3#HomeScreen" />
-    <Style src="project://database/Assets/UI%20Toolkit/USS/Cursor.uss?fileID=7433441132597879392&amp;guid=c4f7afc5474b8ba4a95ab4b2cc3121de&amp;type=3#Cursor" />
-    <ui:VisualElement name="homeScreen" style="flex-grow: 1;">
-        <ui:VisualElement style="flex-grow: 1;" />
-    </ui:VisualElement>
-</ui:UXML>
