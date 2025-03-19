@@ -1,9 +1,11 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement Instance { get; private set; }
     [Header("Movement Settings")]
     public float movementSpeed;
     public float dashForce;
@@ -13,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Input Settings")]
     public InputActionReference MoveAction;
     public InputActionReference DashAction;
+    public InputActionReference PauseAction;
     [Header("Debug Settings/Values")]
     private Rigidbody _rigidBody;
     private Vector3 _inputDirection;
@@ -32,6 +35,14 @@ public class PlayerMovement : MonoBehaviour
         {
             _rigidBody = GetComponent<Rigidbody>();
         }
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 
     private void OnEnable()
@@ -40,6 +51,9 @@ public class PlayerMovement : MonoBehaviour
         MoveAction.action.canceled +=  MoveInput;
         MoveAction.action.performed +=  MoveInput;
         DashAction.action.performed +=  DashInput;
+        PauseAction.action.performed += PauseInput;
+
+
 
     }
 
@@ -49,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
         MoveAction.action.canceled -= MoveInput;
         MoveAction.action.performed -= MoveInput;
         DashAction.action.performed -= DashInput;
+        PauseAction.action.performed -= PauseInput;
     }
 
     private void MoveInput(InputAction.CallbackContext ctx)
@@ -62,6 +77,13 @@ public class PlayerMovement : MonoBehaviour
         {
             Dash();
         }
+    }
+    private void PauseInput(InputAction.CallbackContext ctx)
+    {
+        UIDocument _uiDocument = FindFirstObjectByType<UIDocument>();
+        _uiDocument.rootVisualElement.Q<VisualElement>("PauseScreen").visible = true;
+        Time.timeScale = 0;
+
     }
 
     void Dash()

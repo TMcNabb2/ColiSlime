@@ -1,0 +1,10 @@
+.cursor-a {
+    cursor: url("project://database/Assets/UI%20Toolkit/Cursor.png?fileID=2800000&guid=206557aad2614964284fee6d42475599&type=3#Cursor");
+}
+
+.cursor-b {
+    cursor: initial;
+}
+
+VisualElement {
+}
