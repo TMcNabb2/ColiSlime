@@ -1,0 +1,21 @@
+#joystickBackground {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 255, 0.1);
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    margin-top: -60px;
+    margin-left: -60px;
+}
+
+#joystickHandle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 255, 0);
+    border-radius: 50%;
+    left: 25%;
+    top: 25%;
+}
