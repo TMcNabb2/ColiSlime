@@ -2,7 +2,6 @@
     flex-direction: row-reverse;
     width: 100%;
     height: 100%;
-    -unity-font-definition: url("project://database/Assets/Feature-GameScenes/Font/Zu%20Kabarett%20SDF.asset?fileID=11400000&guid=e9de8c58e56760149bd815da1b9ab257&type=2#Zu Kabarett SDF");
 }
 
 .options-bar-currency-group {
@@ -51,7 +50,6 @@
     left: 0;
     width: 79px;
     height: 71px;
-    background-image: url("project://database/Assets/UI%20Toolkit/ButtonAiBack.png?fileID=1291714558&guid=6fde9e0f8132f5d4b8f400252fd5059b&type=3#ButtonAiBack_0");
     background-size: contain;
     -unity-background-scale-mode: scale-to-fit;
 }

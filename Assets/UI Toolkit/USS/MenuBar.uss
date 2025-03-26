@@ -6,7 +6,6 @@
     margin-bottom: -1px;
     font-size: 25px;
     -unity-text-align: lower-center;
-    background-image: url("project://database/Assets/UI%20Toolkit/ButtonAiBack.png?fileID=2800000&guid=6fde9e0f8132f5d4b8f400252fd5059b&type=3#ButtonAiBack");
     border-left-color: rgba(121, 185, 109, 0.42);
     border-right-color: rgba(121, 185, 109, 0.42);
     border-top-color: rgba(121, 185, 109, 0.42);
@@ -35,7 +34,6 @@
     border-right-color: rgba(121, 185, 109, 0.42);
     border-top-color: rgba(121, 185, 109, 0.42);
     border-bottom-color: rgba(121, 185, 109, 0.42);
-    background-image: url("project://database/Assets/UI%20Toolkit/ButtonAiBack.png?fileID=2800000&guid=6fde9e0f8132f5d4b8f400252fd5059b&type=3#ButtonAiBack");
     -unity-background-image-tint-color: rgb(255, 255, 255);
 }
 
