@@ -35,13 +35,11 @@
     justify-content: center;
     width: 50%;
     height: 100%;
-    background-image: url("project://database/Assets/UI%20Toolkit/BannerbgAi%201.png?fileID=-824001176&guid=19ddbbd589ca66e44b9cc7ba0d1987ba&type=3#BannerbgAi 1_0");
 }
 
 .settings__separator {
     flex-basis: 20px;
     height: 95%;
-    background-image: url("project://database/Assets/UI%20Toolkit/pixilart-drawing.png?fileID=-414599635&guid=61d6ed504a631974887bf1c32b3c5080&type=3#pixilart-drawing_0");
     overflow: hidden;
 }
 
@@ -75,7 +73,6 @@
     -unity-text-align: upper-center;
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
     transition-duration: 0.25s;
-    background-image: url("project://database/Assets/UI%20Toolkit/ButtonAiBack.png?fileID=1291714558&guid=6fde9e0f8132f5d4b8f400252fd5059b&type=3#ButtonAiBack_0");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;

@@ -6,7 +6,7 @@
                 <ui:VisualElement name="menu__safe-area" style="flex-grow: 0; background-color: rgb(81, 113, 98);" />
             </ui:VisualElement>
             <ui:VisualElement name="menu_button-group" picking-mode="Ignore" class="menu__button-group" style="flex-grow: 0; top: 0; flex-basis: 75%; margin-top: 2%; width: 100%;">
-                <ui:Button text="Button" name="menu__home-button" class="menu__button" style="background-color: rgb(188, 188, 188); background-image: url(&quot;project://database/Assets/UI%20Toolkit/ButtonAiBack.png?fileID=2800000&amp;guid=6fde9e0f8132f5d4b8f400252fd5059b&amp;type=3#ButtonAiBack&quot;); -unity-background-image-tint-color: rgb(255, 255, 255);">
+                <ui:Button text="Button" name="menu__home-button" class="menu__button" style="background-color: rgb(188, 188, 188); -unity-background-image-tint-color: rgb(255, 255, 255);">
                     <ui:VisualElement name="menu__home-icon" style="flex-grow: 1;" />
                 </ui:Button>
                 <ui:Button text="Button" name="menu__char-button" class="menu__button">

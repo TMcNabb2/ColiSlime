@@ -6,7 +6,6 @@
     align-content: flex-start;
     width: 80%;
     height: auto;
-    -unity-font-definition: url("project://database/Assets/Feature-GameScenes/Font/Zu%20Kabarett%20SDF.asset?fileID=11400000&guid=e9de8c58e56760149bd815da1b9ab257&type=2#Zu Kabarett SDF");
     font-size: 20px;
     -unity-text-align: upper-center;
     white-space: normal;
