@@ -110,7 +110,6 @@ namespace EventChannels.Editor
 			element.Add(CreateSignalField(property));
 
 			element.Bind(serializedObject);
-			//Debug.Log($"binding path for element at index {index} is '{propertyField.bindingPath}");
 			return element;
 		}
 

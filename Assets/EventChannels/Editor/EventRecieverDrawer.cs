@@ -34,7 +34,7 @@ namespace EventChannels.Editor
 					flexGrow = 1,
 				},
 			};
-			selectorButton.clicked += () => ShowSelectorDropdown(id, selectorButton, channelField.value as Channel);
+			selectorButton.clicked += () => ShowSelectorDropdown(id, selectorButton, channelField.value as EventChannel);
 			foldout.Add(selectorButton);
 
 			var enabledToggle = new Toggle() {
@@ -101,7 +101,7 @@ namespace EventChannels.Editor
 			property.serializedObject.ApplyModifiedProperties();
 		}
 
-		private void ShowSelectorDropdown(SerializedProperty property, Button selectorButton, Channel channel)
+		private void ShowSelectorDropdown(SerializedProperty property, Button selectorButton, EventChannel channel)
 		{
 			var evts = channel.GetEvents();
 
