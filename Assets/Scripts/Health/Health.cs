@@ -19,6 +19,19 @@ public class Health : MonoBehaviour, IDamageable
 		_healthSlider.maxValue = _maxHealth;
 		_healthSlider.value = _health;
 	}
+	
+	public void SetMaxHealth(float maxHealth)
+	{
+	    _maxHealth = maxHealth;
+	    _health = maxHealth;
+	    
+	    if (_healthSlider != null)
+	    {
+	        _healthSlider.maxValue = _maxHealth;
+	        _healthSlider.value = _health;
+	    }
+	}
+	
 	public void TakeDamage(float damage)
 	{
 		_health = Mathf.Clamp(_health - damage, 0, _maxHealth);

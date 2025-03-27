@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ed6ea3075e134c4589d1b20d790abf8, type: 3}
+  m_Name: BalancedSlime
+  m_EditorClassIdentifier: 
+  characterName: Balanced Slime
+  characterSprite: {fileID: 0}
+  description: A jack-of-all-trades option with 15% increased XP gain and a 10% chance
+    to choose another ability on level up.
+  maxHealth: 100
+  movementSpeed: 5
+  xpMultiplier: 1.15
+  hasAdaptation: 1
+  adaptationChance: 0.1
