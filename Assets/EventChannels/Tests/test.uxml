@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/EventChannels/Editor/EventChannelEditor.uss?fileID=7433441132597879392&amp;guid=40524f3b30938244e95a4e96ef780007&amp;type=3#EventChannelEditor" />
+    <ui:Label text="Events" name="header" class="event-header" />
+    <ui:VisualElement name="container" class="container" style="flex-grow: 1;">
+        <ui:VisualElement name="event-list" class="event-list">
+            <ui:Label text="List is Empty" name="empty-label" class="empty-label event-list-item" />
+            <ui:VisualElement name="list-item" class="event-list-item" style="flex-grow: 1;">
+                <ui:Button text="-" name="remove-button" />
+                <ui:TextField label="Text Field" placeholder-text="filler text" class="flex-grow" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button text="Add Event" name="add-button" class="add-button" />
+    </ui:VisualElement>
+</ui:UXML>

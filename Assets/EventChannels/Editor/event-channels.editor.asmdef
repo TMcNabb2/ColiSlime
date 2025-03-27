@@ -1,0 +1,18 @@
+{
+    "name": "event-channels.editor",
+    "rootNamespace": "EventChannels.Editor",
+    "references": [
+        "GUID:bf6bfa00dd6679e4ea0189d77a0c6c6f"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
