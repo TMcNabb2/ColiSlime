@@ -64,11 +64,11 @@ namespace EventChannels.Editor
 			{
 				var evts = channel.GetEvents();
 				var signal = evts.FirstOrDefault(e => e.id == property.intValue);
+				selectorButton.enabledSelf = true;
 
 				if (signal is not null)
 				{
 					SetEvent(property, selectorButton, signal);
-					selectorButton.enabledSelf = true;
 				}
 				else if (property.intValue != 0)
 				{

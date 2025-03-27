@@ -63,7 +63,6 @@ namespace EventChannels.Editor
 			events.InsertArrayElementAtIndex(events.arraySize);
 			events.serializedObject.ApplyModifiedProperties();
 			serializedObject.Update();
-			//listContainer.Add(CreateListItem(events, listContainer, events.arraySize - 1));
 			UpdateEventList(events, listContainer);
 		}
 

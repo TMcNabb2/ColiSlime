@@ -73,7 +73,7 @@ namespace EventChannels
 			}
 		}
 
-		public void EnableEvent(int eventId)
+		public virtual void EnableEvent(int eventId)
 		{
 			if (EventsDict.TryGetValue(eventId, out var signal))
 			{
@@ -84,7 +84,7 @@ namespace EventChannels
 				Debug.LogWarning(Messages.MissingEvent(this, "enable event", eventId));
 			}
 		}
-		public void DisableEvent(int eventId)
+		public virtual void DisableEvent(int eventId)
 		{
 			if (EventsDict.TryGetValue(eventId, out var signal))
 			{
@@ -95,7 +95,7 @@ namespace EventChannels
 				Debug.LogWarning(Messages.MissingEvent(this, "disable event", eventId));
 			}
 		}
-		public bool EventEnabled(int eventId) => EventsDict.ContainsKey(eventId) && !this.EventsDict[eventId].disabled;
+		public virtual bool EventEnabled(int eventId) => EventsDict.ContainsKey(eventId) && !this.EventsDict[eventId].disabled;
 
 		public void Broadcast(int eventId, object sender, object data)
 		{
