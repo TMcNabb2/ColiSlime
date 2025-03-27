@@ -30,7 +30,7 @@
                             <ui:Label text="Master volume" display-tooltip-when-elided="true" name="settings__slider1-label" picking-mode="Ignore" class="settings__panel-label" style="flex-basis: 29%; height: 96px; -unity-text-align: middle-left; flex-wrap: wrap; font-size: 30px; white-space: normal; translate: 18px 0; ">
                                 <Bindings />
                             </ui:Label>
-                            <ui:VisualElement name="settings__slider1-drag-area" style="flex-basis: 76%; cursor: url(&apos;absolute&apos;);">
+                            <ui:VisualElement name="settings__slider1-drag-area" style="flex-basis: 76%;">
                                 <ui:Slider high-value="100" name="settings__slider1" value="50" fill="true" class="settings-slider" style="top: 30%; width: 90%; left: 5%; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0; " />
                             </ui:VisualElement>
                         </ui:VisualElement>
@@ -38,7 +38,7 @@
                             <ui:Label text="Music volume" display-tooltip-when-elided="true" name="settings__slider3-label" picking-mode="Ignore" class="settings__panel-label" style="flex-basis: 29%; height: 96px; -unity-text-align: middle-left; flex-wrap: wrap; font-size: 30px; white-space: normal; translate: 18px 0; ">
                                 <Bindings />
                             </ui:Label>
-                            <ui:VisualElement name="settings__slider3-drag-area" style="flex-basis: 76%; cursor: url(&apos;absolute&apos;);">
+                            <ui:VisualElement name="settings__slider3-drag-area" style="flex-basis: 76%; ">
                                 <ui:Slider high-value="100" name="settings__slider2" value="50" fill="true" class="settings-slider" style="top: 30%; width: 90%; left: 5%; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0; " />
                             </ui:VisualElement>
                         </ui:VisualElement>
@@ -46,7 +46,7 @@
                             <ui:Label text="Music volume" display-tooltip-when-elided="true" name="settings__slider3-label" picking-mode="Ignore" class="settings__panel-label" style="flex-basis: 29%; height: 96px; -unity-text-align: middle-left; flex-wrap: wrap; font-size: 30px; white-space: normal; translate: 18px 0; ">
                                 <Bindings />
                             </ui:Label>
-                            <ui:VisualElement name="settings__slider3-drag-area" style="flex-basis: 76%; cursor: url(&apos;absolute&apos;);">
+                            <ui:VisualElement name="settings__slider3-drag-area" style="flex-basis: 76%;">
                                 <ui:Slider high-value="100" name="settings__slider3" value="50" fill="true" class="settings-slider" style="top: 30%; width: 90%; left: 5%; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0; " />
                             </ui:VisualElement>
                         </ui:VisualElement>
