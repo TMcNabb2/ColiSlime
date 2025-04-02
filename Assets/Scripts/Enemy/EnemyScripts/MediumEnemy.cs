@@ -25,11 +25,11 @@ public class MediumEnemy : MonoBehaviour
             {
                 // move towards in zigzag pattern
                 Vector3 directionToPlayer = (PlayerMovement.Instance.transform.position - transform.position).normalized;
-                float sineFactor = Mathf.Sin(Time.time * (moveSpeed/2)) * 1;
+                float sineFactor = Mathf.Sin(Time.time * (moveSpeed)) * 1.5f;
                 Vector3 sineOffset = Vector3.Cross(directionToPlayer, Vector3.up).normalized * sineFactor;
                 Vector3 finalDirection = directionToPlayer + sineOffset;
 
-                // Move towards the player with the adjusted direction
+                // move towards the player with the adjusted direction
                 transform.LookAt(transform.position + finalDirection);
                 transform.position = Vector3.MoveTowards(transform.position, transform.position + finalDirection, moveSpeed * Time.deltaTime);
             }

@@ -9,10 +9,13 @@ public class BigDash : MonoBehaviour
 
 
     private float moveForce;
+    [SerializeField]
     private bool _inTarget;
     private float currentchargeTime;
     private float currentInTargetTime;
-    
+    Vector3 directionToPlayer;
+
+
 
     private void Update()
     {
@@ -20,11 +23,13 @@ public class BigDash : MonoBehaviour
         {
             if (currentInTargetTime >= attackTime)
             {
-                myAI.enabled = false;
-                transform.parent.transform.LookAt(PlayerMovement.Instance.transform);
+
+                directionToPlayer = (new Vector3(PlayerMovement.Instance.transform.position.x, transform.position.y, PlayerMovement.Instance.transform.position.z) - transform.position).normalized;
+                directionToPlayer.y = 0;
                 if (currentchargeTime >= chargeTime)
                 {
                     // attack
+                    
                     moveForce = 80;
                     currentchargeTime = 0f;
                     currentInTargetTime = 0f;
@@ -35,12 +40,14 @@ public class BigDash : MonoBehaviour
         }
         else
 
-        if (moveForce < 0.4)
+        if (moveForce < 2)
         {
-            myAI.enabled = true;
+
+            directionToPlayer = Vector3.zero;
         }
         
-        transform.parent.transform.Translate(transform.forward * moveForce * Time.deltaTime);
+        
+        transform.parent.transform.Translate(directionToPlayer * moveForce * Time.deltaTime,Space.World);
         
         moveForce *= 0.95f;
 
