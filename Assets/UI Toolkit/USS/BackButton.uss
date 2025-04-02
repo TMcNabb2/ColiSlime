@@ -12,7 +12,6 @@
     right: 12.5%;
     width: 75%;
     height: 75%;
-    background-image: url("project://database/Assets/UI%20Toolkit/ButtonAiBack(1).png?fileID=-1684547669&guid=fb59c8df569abe7419c402057b0ef513&type=3#ButtonAiBack(1)_0");
     background-size: contain;
     -unity-background-scale-mode: scale-to-fit;
 }

@@ -5,10 +5,10 @@
         <ui:VisualElement name="settings__background" class="settings__background" style="flex-grow: 0; top: 25%; left: 25%; width: 60%; height: 60%; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;">
             <ui:VisualElement name="settings__container" class="settings__container" style="flex-grow: 0;">
                 <ui:VisualElement name="settings__header" class="settings__header" style="flex-grow: 0; height: 60px; -unity-text-align: upper-left; justify-content: flex-start; align-items: center; margin-bottom: 30px;">
-                    <ui:VisualElement name="settings-header__banner" class="settings-header__banner" style="flex-grow: 0; position: absolute; left: 0; align-items: center; justify-content: center; width: 100%; height: 150%; background-image: url(&quot;project://database/Assets/UI%20Toolkit/BannerbgAi%201.png?fileID=-824001176&amp;guid=19ddbbd589ca66e44b9cc7ba0d1987ba&amp;type=3#BannerbgAi 1_0&quot;); top: -21px; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;" />
+                    <ui:VisualElement name="settings-header__banner" class="settings-header__banner" style="flex-grow: 0; position: absolute; left: 0; align-items: center; justify-content: center; width: 100%; height: 150%;  top: -21px; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;" />
                     <ui:Label text="Settings" name="settings__panel-label" class="settings-title-label" style="bottom: 15%;" />
                     <ui:Button display-tooltip-when-elided="true" name="settings__panel-back-button" class="cursor-b back-button" style="position: absolute; top: 0; width: 10%; height: 75%; background-color: rgba(255, 0, 0, 0.4); background-size: contain; right: 10px; justify-content: center; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;">
-                        <ui:VisualElement name="settings__panel-back-button-icon" picking-mode="Ignore" class="back-button-icon" style="width: 100%; height: 100%; left: auto; right: auto; top: auto; background-image: url(&quot;project://database/Assets/UI%20Toolkit/ButtonAiBack.png?fileID=1291714558&amp;guid=6fde9e0f8132f5d4b8f400252fd5059b&amp;type=3#ButtonAiBack_0&quot;); background-size: 100% 100%; -unity-background-scale-mode: stretch-to-fill; flex-grow: 0; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
+                        <ui:VisualElement name="settings__panel-back-button-icon" picking-mode="Ignore" class="back-button-icon" style="width: 100%; height: 100%; left: auto; right: auto; top: auto;  background-size: 100% 100%; -unity-background-scale-mode: stretch-to-fill; flex-grow: 0; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
                     </ui:Button>
                 </ui:VisualElement>
                 <ui:VisualElement name="settings__body-container" style="flex-grow: 0; flex-direction: row;">
@@ -27,27 +27,27 @@
                     <ui:VisualElement name="settings__separator" class="settings__separator" style="flex-grow: 1; height: 410px;" />
                     <ui:VisualElement name="settings__right-container" class="settings__panel-body" style="flex-grow: 1; align-items: stretch; justify-content: space-evenly;">
                         <ui:VisualElement name="settings__slider1-container" picking-mode="Ignore" class="settings__slider1-container settings__slider-container" style="flex-direction: column;">
-                            <ui:Label text="Master volume" display-tooltip-when-elided="true" name="settings__slider1-label" picking-mode="Ignore" class="settings__panel-label" style="flex-basis: 29%; height: 96px; -unity-text-align: middle-left; flex-wrap: wrap; font-size: 30px; white-space: normal; translate: 18px 0; cursor: url(&apos;absolute&apos;);">
+                            <ui:Label text="Master volume" display-tooltip-when-elided="true" name="settings__slider1-label" picking-mode="Ignore" class="settings__panel-label" style="flex-basis: 29%; height: 96px; -unity-text-align: middle-left; flex-wrap: wrap; font-size: 30px; white-space: normal; translate: 18px 0; ">
                                 <Bindings />
                             </ui:Label>
                             <ui:VisualElement name="settings__slider1-drag-area" style="flex-basis: 76%; cursor: url(&apos;absolute&apos;);">
-                                <ui:Slider high-value="100" name="settings__slider1" value="50" fill="true" class="settings-slider" style="top: 30%; width: 90%; left: 5%; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0; cursor: url(&apos;absolute&apos;);" />
+                                <ui:Slider high-value="100" name="settings__slider1" value="50" fill="true" class="settings-slider" style="top: 30%; width: 90%; left: 5%; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0; " />
                             </ui:VisualElement>
                         </ui:VisualElement>
                         <ui:VisualElement name="settings__slider2-container" picking-mode="Ignore" class="settings__slider1-container settings__slider-container" style="flex-direction: column; align-items: stretch;">
-                            <ui:Label text="Music volume" display-tooltip-when-elided="true" name="settings__slider3-label" picking-mode="Ignore" class="settings__panel-label" style="flex-basis: 29%; height: 96px; -unity-text-align: middle-left; flex-wrap: wrap; font-size: 30px; white-space: normal; translate: 18px 0; cursor: url(&apos;absolute&apos;);">
+                            <ui:Label text="Music volume" display-tooltip-when-elided="true" name="settings__slider3-label" picking-mode="Ignore" class="settings__panel-label" style="flex-basis: 29%; height: 96px; -unity-text-align: middle-left; flex-wrap: wrap; font-size: 30px; white-space: normal; translate: 18px 0; ">
                                 <Bindings />
                             </ui:Label>
                             <ui:VisualElement name="settings__slider3-drag-area" style="flex-basis: 76%; cursor: url(&apos;absolute&apos;);">
-                                <ui:Slider high-value="100" name="settings__slider2" value="50" fill="true" class="settings-slider" style="top: 30%; width: 90%; left: 5%; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0; cursor: url(&apos;absolute&apos;);" />
+                                <ui:Slider high-value="100" name="settings__slider2" value="50" fill="true" class="settings-slider" style="top: 30%; width: 90%; left: 5%; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0; " />
                             </ui:VisualElement>
                         </ui:VisualElement>
                         <ui:VisualElement name="settings__slider3-container" picking-mode="Ignore" class="settings__slider1-container settings__slider-container" style="flex-direction: column;">
-                            <ui:Label text="Music volume" display-tooltip-when-elided="true" name="settings__slider3-label" picking-mode="Ignore" class="settings__panel-label" style="flex-basis: 29%; height: 96px; -unity-text-align: middle-left; flex-wrap: wrap; font-size: 30px; white-space: normal; translate: 18px 0; cursor: url(&apos;absolute&apos;);">
+                            <ui:Label text="Music volume" display-tooltip-when-elided="true" name="settings__slider3-label" picking-mode="Ignore" class="settings__panel-label" style="flex-basis: 29%; height: 96px; -unity-text-align: middle-left; flex-wrap: wrap; font-size: 30px; white-space: normal; translate: 18px 0; ">
                                 <Bindings />
                             </ui:Label>
                             <ui:VisualElement name="settings__slider3-drag-area" style="flex-basis: 76%; cursor: url(&apos;absolute&apos;);">
-                                <ui:Slider high-value="100" name="settings__slider3" value="50" fill="true" class="settings-slider" style="top: 30%; width: 90%; left: 5%; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0; cursor: url(&apos;absolute&apos;);" />
+                                <ui:Slider high-value="100" name="settings__slider3" value="50" fill="true" class="settings-slider" style="top: 30%; width: 90%; left: 5%; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0; " />
                             </ui:VisualElement>
                         </ui:VisualElement>
                     </ui:VisualElement>
