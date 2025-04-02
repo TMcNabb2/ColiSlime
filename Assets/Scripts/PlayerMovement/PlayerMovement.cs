@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     
     [SerializeField]
     private float _dashCooldownTimer;
+    [SerializeField]
+    private bool _testInvertControls;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -68,7 +70,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void MoveInput(InputAction.CallbackContext ctx)
     {
-        _inputDirection = ctx.ReadValue<Vector2>();
+        _inputDirection = -ctx.ReadValue<Vector2>();
+        if (_testInvertControls)
+        {
+            _inputDirection = ctx.ReadValue<Vector2>();
+        }
+       
     }
 
     private void DashInput(InputAction.CallbackContext ctx)
@@ -106,6 +113,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         _dashCooldownTimer -= Time.deltaTime;
+        transform.LookAt(transform.position + _rigidBody.linearVelocity.normalized);
     }
 
     void FixedUpdate()

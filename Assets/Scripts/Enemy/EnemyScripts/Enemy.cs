@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -25,4 +26,16 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject == PlayerMovement.Instance.gameObject)
+        {
+            IDamageable damageable = other.gameObject.GetComponent<IDamageable>();
+            if (other.gameObject.TryGetComponent<IDamageable>(out damageable))
+            {
+                other.gameObject.GetComponent<IDamageable>().TakeDamage(damage);
+            }
+           
+        }
+    }
 }
